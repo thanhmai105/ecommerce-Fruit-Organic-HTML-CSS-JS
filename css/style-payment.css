@@ -1,0 +1,96 @@
+:root {
+    --primary: #69ae14;
+    --white: #fff;
+    --black: #222;
+    --grey1: #3a3b3c;
+    --grey2: #828282;
+}
+
+h1 {
+    background-color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+h2 {
+    color: var(--primary);
+}
+
+h3 {
+    color: green;
+    font-size: 2rem;
+}
+
+#info-checkout, #info-order {
+    background-color: white;
+    width: 48%;
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+.form-child {
+    display: flex;
+    position: relative;
+    margin: 3rem 0;
+}
+
+.form-child > input {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 4rem;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+}
+
+#info-order img {
+    width: 30%;
+}
+
+#info-order .form-child {
+    line-height: 12px;
+    align-items: center;
+    background-color: rgb(225, 255, 227);
+    padding: 1.5rem;
+}
+
+#form-item > .form-child span {
+    color: var(--primary);
+}
+
+#form-item > .form-child p {
+    margin-bottom: 0.7rem;
+}
+
+#form-item > .form-child p:nth-child(2) {
+    color: var(--grey1);
+    font-size: 1.3rem;
+}
+
+#form-item > .form-child p:nth-child(3) {
+    color: var(--grey2);
+    font-size: 1.2rem;
+}
+
+#info-order .cart-cost {
+    text-align: left;
+    float: right;
+    width: 50%;
+}
+
+.cart-cost span{
+    text-align: right;
+}
+
+@media screen and (max-width: 768px ) {
+    .payment-content {
+        display: inline!important;
+    }
+
+    #info-checkout, #info-order {
+        background-color: white;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
